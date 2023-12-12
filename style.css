@@ -15,7 +15,7 @@
   --yellow: rgb(213, 206, 0);
   --orange: rgb(242, 80, 26);
   --pink: rgb(19, 121, 231);
-  --hover-color:white;
+  --hover-color: white;
 }
 html {
   scroll-behavior: smooth;
@@ -205,7 +205,7 @@ p {
   position: relative;
   align-items: center;
   top: 70px;
-  left: 250px;
+  left: 300px;
 
   display: flex;
   flex-flow: column nowrap;
@@ -220,8 +220,11 @@ p {
 span {
   font-size: 25px;
 }
-#software-developer {
+#profesion {
   font-size: 20px;
+}
+#dynamic-text{
+  color: rgb(0, 0, 0);
 }
 #hire-button {
   background-color: var(--bgcolor);
@@ -234,7 +237,7 @@ span {
 
   position: relative;
   top: 300px;
-  left: 55px;
+  left: 95px;
 
   cursor: pointer;
   transition: transform 0.3s;
@@ -245,9 +248,9 @@ span {
   background-color: var(--hover-color);
 } */
 .share-icons {
-  background-color: var(--bgcolor);
+  /* background-color: var(--bgcolor); */
   border-radius: var(--bradius);
-  box-shadow: var(--shadow);
+  /* box-shadow: var(--shadow); */
 
   display: flex;
   justify-content: space-between;
@@ -255,7 +258,7 @@ span {
 
   position: relative;
   top: 66%;
-  left: -24%;
+  left: -22%;
 
   height: 24%;
   width: 53%;
@@ -374,6 +377,9 @@ span {
   height: 85vh;
   padding: 2rem;
 }
+#heading-page3{
+  font-size: 35px;
+}
 .cards-container {
   position: relative;
   width: 60vw;
@@ -398,12 +404,12 @@ span {
   padding: 10px;
   transition: transform 0.3s;
 }
-.cards:hover,.cards:focus {
-  /* background-color: var(--hover-color); */
+/* .cards:hover,.cards:focus {
+  background-color: var(--hover-color);
   transform: var(--translate);
     box-shadow: var(--shadow);
 
-}
+}*/
 /* -----------------open,close buttons---------- */
 .details-button {
   background-color: var(--bgcolor);
@@ -703,9 +709,9 @@ span {
   left: 5%;
 
   padding: 10px;
-  caret-color:var(--gradient1);
+  caret-color: var(--gradient1);
 }
-.contact-form input:focus{
+.contact-form input:focus {
   outline: 2px solid var(--gradient1);
 }
 #messege {

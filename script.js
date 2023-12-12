@@ -1,3 +1,34 @@
+let colors = [
+  { id: "dark-btn", className: "dark" },
+  { id: "green-btn", className: "green" },
+  { id: "yellow-btn", className: "yellow" },
+  { id: "orange-btn", className: "orange" },
+  { id: "pink-btn", className: "pink" },
+];
+
+colors.forEach((button) => {
+  let element = document.getElementById(button.id);
+  element.addEventListener("click", () => {
+    document.body.className = "";
+    document.body.classList.toggle(button.className);
+    F;
+  });
+});
+
+let dynamicText = document.querySelector("#dynamic-text");
+function change() {
+  const dynamicText = document.getElementById("dynamic-text");
+  const text = ["Web-Developer", "Explorer", "Student"]
+  let currentindex = 0;
+
+  setInterval(() => {
+    dynamicText.textContent = text[currentindex];
+    currentindex = (currentindex + 1) % text.length;
+  }, 2000);
+  
+}
+change();
+
 let openButtons = document.querySelectorAll(".details-button");
 
 openButtons.forEach(function (button) {
@@ -33,43 +64,3 @@ closeButtons.forEach(function (button) {
     }
   });
 });
-
-let colors = [
-  { id: "dark-btn", className: "dark" },
-  { id: "green-btn", className: "green" },
-  { id: "yellow-btn", className: "yellow" },
-  { id: "orange-btn", className: "orange" },
-  { id: "pink-btn", className: "pink" },
-];
-
-colors.forEach((button) => {
-  let element = document.getElementById(button.id);
-  element.addEventListener("click", () => {
-    document.body.className = "";
-    document.body.classList.toggle(button.className);
-    F;
-  });
-});
-// let navButton = document.querySelectorAll(".navLink");
-// let prevButton = null;
-
-// let navButton = document.querySelectorAll(".navLink");
-// let prevButton = null;
-
-// let resetScale = () =>
-//   navButton.forEach((a) => (a.style.transform = "scale(1)"));
-
-// navButton.forEach((a) =>
-//   a.addEventListener("click", () => {
-//     prevButton && prevButton !== a ? resetScale() : null;
-//     a.style.transform = "scale(0.9)";
-//     prevButton = a;
-//   })
-// );
-
-// document.addEventListener("click", (e) => {
-//   e.target.classList.contains("navLink")
-//     ? null
-//     : (resetScale(), (prevButton = null));
-// });
-
