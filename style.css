@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 :root {
-  --bgcolor: rgba(194, 184, 184, 0.373);
+  --bgcolor:linear-gradient(#ffffff59,#ffffffd0);
   --shadow: 5px 5px 5px rgba(0, 0, 0, 0.504);
   --bradius: 8px;
   --translate: translateY(-5px);
